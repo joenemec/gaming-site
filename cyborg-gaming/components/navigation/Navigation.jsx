@@ -45,7 +45,9 @@ const Navigation = () => {
             {NavigationLinks.map((link, index) => {
               return (
                 <li key={index}>
-                  <Link href={link.url}>{link.title}</Link>
+                  <Link href={link.url} onClick={closeHandler}>
+                    {link.title}
+                  </Link>
                   {link.image ? (
                     <Image
                       className={styles.profile}
