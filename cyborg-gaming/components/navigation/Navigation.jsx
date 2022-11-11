@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
-
 import Link from "next/link";
 
 import { NavigationLinks } from "./NavigationLinks";
-import { TbSearch, TbAlignLeft } from "react-icons/tb";
 import { CgMenuLeft, CgClose } from "react-icons/cg";
 
 import styles from "./Navigation.module.scss";
@@ -19,23 +17,25 @@ const Navigation = () => {
   const closeHandler = () => {
     setIsResponsive(false);
   };
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.logo}>
-            <Image
-              src="/images/logo.png"
-              width={191}
-              height={50.73}
-              alt="Company Logo"
-            />
+            <Link href="/">
+              <Image
+                src="/images/logo.png"
+                width={191}
+                height={50.73}
+                alt="Company Logo"
+              />
+            </Link>
           </div>
           <div className={styles.search}>
             <input placeholder="Type Something"></input>
           </div>
         </div>
-
         <nav
           className={
             isResponsive ? [styles.nav, styles.active].join(" ") : [styles.nav]
