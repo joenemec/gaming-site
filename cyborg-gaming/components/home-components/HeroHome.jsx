@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { HeroHomeContent } from "./HeroHomeContent";
+import { HeroHomeContent } from "./HomeContent";
 
 import styles from "./HeroHome.module.scss";
 

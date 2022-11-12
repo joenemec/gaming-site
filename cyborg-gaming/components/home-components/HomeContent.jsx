@@ -9,3 +9,5 @@ export const HeroHomeContent = [
     },
   },
 ];
+
+export const PopularHomeContent = [];
