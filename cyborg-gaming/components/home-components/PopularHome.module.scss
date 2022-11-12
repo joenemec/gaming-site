@@ -1,0 +1,12 @@
+.popular {
+  .content {
+    h4 {
+      font-size: clamp(20px, 2vw, 35px);
+      color: #e75e8d;
+    }
+    span {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}

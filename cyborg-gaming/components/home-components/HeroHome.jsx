@@ -7,8 +7,8 @@ import styles from "./HeroHome.module.scss";
 const HeroHome = () => {
   return (
     <div className={styles.hero}>
-      {HeroHomeContent.map((content) => (
-        <div className={styles.content}>
+      {HeroHomeContent.map((content, index) => (
+        <div className={styles.content} key={index}>
           <span className={styles.subTitle}>{content.subTitle}</span>
           <h1>
             <span>{content.span}</span> {content.title}
