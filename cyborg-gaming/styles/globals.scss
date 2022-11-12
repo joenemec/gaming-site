@@ -14,13 +14,11 @@ body {
 
 main {
   margin-inline: auto;
-  margin-block-start: 12vh;
-  padding-block: 4vw;
-  padding-inline: 4vw;
+  margin-block-start: 13vh;
+  padding-block: 2vw;
+  padding-inline: 3vw;
   max-width: 1320px;
   min-height: 100vh;
-  background-color: #27292a;
-  border-radius: 23px;
 }
 
 li {
@@ -33,13 +31,41 @@ a {
 }
 
 button {
+  font-family: "Poppins", sans-serif;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.btn {
+  padding-block: 0.7rem;
+  padding-inline: 1.8rem;
+  font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  border-radius: 50px;
+  transition: 0.15s ease-in;
+  &:hover {
+    background-color: #fff;
+    & a {
+      color: #e75e8d;
+    }
+  }
+  & a {
+    font-weight: 500;
+    color: #fff;
+    transition: 0.15s ease-in;
+  }
 }
 
 input {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   border: none;
+}
+
+@media (min-width: 62rem) {
+  main {
+    padding-inline: 1vw;
+  }
 }

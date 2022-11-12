@@ -3,9 +3,46 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 40vh;
+  min-height: 70vh;
   border-radius: 23px;
-
   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-inline: auto;
+    max-width: 85%;
+    min-height: 70vh;
+    overflow: hidden;
+    .subTitle {
+      font-size: 20px;
+      color: #fff;
+    }
+    h1 {
+      line-height: 1.2;
+      text-align: center;
+      font-size: clamp(35px, 5vw, 45px);
+      color: #fff;
+      span {
+        color: #e75e8d;
+      }
+    }
+  }
+}
+
+@media (min-width: 62rem) {
+  .hero {
+    min-height: 60vh;
+    .content {
+      align-items: flex-start;
+      min-height: 60vh;
+      max-width: 50%;
+      margin-inline-start: 4rem;
+
+      h1 {
+        text-align: initial;
+      }
+    }
   }
 }

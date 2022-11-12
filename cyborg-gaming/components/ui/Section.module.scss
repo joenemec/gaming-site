@@ -1,0 +1,13 @@
+.section {
+  padding-block: 4vh;
+  padding-inline: 5vw;
+  background-color: #27292a;
+  border-radius: 23px;
+}
+
+@media (min-width: 62rem) {
+  .section {
+    padding-block: 8vh;
+    padding-inline: 3vw;
+  }
+}
