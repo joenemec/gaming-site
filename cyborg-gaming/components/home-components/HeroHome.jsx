@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import { HeroHomeContent } from "./HomeContent";
+import Button from "../ui/Button";
 
 import styles from "./HeroHome.module.scss";
 
@@ -13,9 +12,7 @@ const HeroHome = () => {
           <h1>
             <span>{content.span}</span> {content.title}
           </h1>
-          <button className="btn">
-            <Link href={content.button.url}>{content.button.text}</Link>
-          </button>
+          <Button items={HeroHomeContent} />
         </div>
       ))}
     </div>

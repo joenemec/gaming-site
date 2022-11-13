@@ -14,6 +14,7 @@ const PopularCard = (props) => {
             src={card.image}
             width={200}
             height={150}
+            alt={card.game}
           />
           <div className={styles.text}>
             <div className={styles.left}>

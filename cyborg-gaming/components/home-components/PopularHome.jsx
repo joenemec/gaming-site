@@ -1,8 +1,8 @@
-import Link from "next/link";
-
-import SubSection from "../ui/SubSection";
-import { PopularHomeContent, PoplarHomeCards } from "./HomeContent";
+import { PopularHomeContent, PopularHomeCards } from "./HomeContent";
 import PopularCard from "./PopularCard";
+import SubSection from "../ui/SubSection";
+import SectionHeading from "../ui/SectionHeading";
+import Button from "../ui/Button";
 
 import styles from "./PopularHome.module.scss";
 
@@ -10,17 +10,11 @@ const PopularHome = () => {
   return (
     <SubSection>
       <div className={styles.popular}>
-        {PopularHomeContent.map((content, index) => (
-          <div className={styles.content} key={index}>
-            <h4>
-              <span>{content.span}</span> {content.title}
-            </h4>
-            <PopularCard cards={PoplarHomeCards} />
-            <button className="btn">
-              <Link href={content.button.url}>{content.button.text}</Link>
-            </button>
-          </div>
-        ))}
+        <div className={styles.content}>
+          <SectionHeading items={PopularHomeContent} />
+          <PopularCard cards={PopularHomeCards} />
+          <Button items={PopularHomeContent} />
+        </div>
       </div>
     </SubSection>
   );

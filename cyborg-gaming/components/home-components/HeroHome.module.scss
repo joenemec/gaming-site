@@ -4,7 +4,8 @@
   background-size: cover;
   background-position: center;
   margin-block-end: 4rem;
-  min-height: 70vh;
+  margin-inline: 3vw;
+  min-height: 75vh;
   border-radius: 23px;
   .content {
     display: flex;
@@ -14,9 +15,10 @@
     gap: 1.5rem;
     margin-inline: auto;
     max-width: 85%;
-    min-height: 70vh;
+    min-height: 75vh;
     overflow: hidden;
     .subTitle {
+      text-align: center;
       font-size: 20px;
       color: #fff;
     }
@@ -34,13 +36,13 @@
 
 @media (min-width: 62rem) {
   .hero {
-    min-height: 60vh;
+    margin-inline: initial;
+    min-height: 45vh;
     .content {
       align-items: flex-start;
-      min-height: 60vh;
+      min-height: 45vh;
       max-width: 50%;
       margin-inline-start: 4rem;
-
       h1 {
         text-align: initial;
       }

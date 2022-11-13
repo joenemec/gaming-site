@@ -1,6 +1,6 @@
 .cards {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   .card {
     padding-block: 1.5rem;
     padding-inline: 1rem;
@@ -8,6 +8,7 @@
     border-radius: 23px;
     overflow: hidden;
     .image {
+      padding-block-end: 1.5vh;
       width: 100%;
       height: auto;
       border-radius: 23px;
@@ -16,15 +17,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      line-height: 1.6;
       .left {
-        h5 {
-          font-size: 15px;
-          color: #fff;
-          p {
-            font-weight: 400;
-            color: #666666;
-          }
-        }
       }
       .right {
         display: flex;

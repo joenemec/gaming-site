@@ -1,12 +1,14 @@
 .subSection {
+  margin-block-end: 4rem;
+  padding-inline: 2vw;
+  margin-inline: 3vw;
   padding-block: 4vh;
-  padding-inline: 5vw;
   background-color: #1f2122;
   border-radius: 23px;
 }
 
 @media (min-width: 62rem) {
   .subSection {
-    padding-inline: 1vw;
+    margin-inline: initial;
   }
 }

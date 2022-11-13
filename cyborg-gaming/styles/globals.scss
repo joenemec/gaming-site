@@ -14,11 +14,21 @@ body {
 
 main {
   margin-inline: auto;
-  margin-block-start: 13vh;
+  margin-block-start: 5.5rem;
   padding-block: 2vw;
   padding-inline: 3vw;
   max-width: 1320px;
   min-height: 100vh;
+}
+
+h5 {
+  font-size: 15px;
+  color: #fff;
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+  }
 }
 
 li {

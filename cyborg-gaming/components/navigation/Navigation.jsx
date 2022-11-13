@@ -54,6 +54,7 @@ const Navigation = () => {
                       src={link.image}
                       width={30}
                       height={30}
+                      alt="Profile Picture"
                     />
                   ) : null}
                 </li>

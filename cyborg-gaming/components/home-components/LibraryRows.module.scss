@@ -1,0 +1,28 @@
+.rows {
+  .row {
+    display: grid;
+    place-items: center;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    border-bottom: #27292a 1px solid;
+    .image {
+      border-radius: 23px;
+    }
+    .text {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+      gap: 1.5rem 1rem;
+    }
+  }
+}
+
+@media (min-width: 62rem) {
+  .rows {
+    .row {
+      .text {
+        text-align: initial;
+      }
+    }
+  }
+}

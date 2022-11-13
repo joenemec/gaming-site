@@ -1,0 +1,23 @@
+.library {
+  margin-inline: 3vw;
+  .content {
+    position: relative;
+    h4 {
+      padding-block-end: 4.5vh;
+      font-size: clamp(20px, 2vw, 35px);
+      color: #e75e8d;
+    }
+    span {
+      text-decoration: underline;
+      color: #fff;
+    }
+    button {
+    }
+  }
+}
+
+@media (min-width: 62rem) {
+  .library {
+    margin-inline: initial;
+  }
+}
